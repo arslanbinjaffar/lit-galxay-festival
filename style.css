@@ -1,0 +1,91 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    gap: 32px;
+    width: 100%;
+}
+.left-side{
+    width: 69%;
+    flex: 0 0 60%;
+}
+.hero{
+    width: 100%;
+}
+.hero__image{
+    width: 100%;
+    height:300px;
+}
+.heero__date{
+    padding:5px 0;
+}
+.hero__heading{
+    padding: 10px 0;
+}
+.hero__para{
+    padding: 10px 0;
+}
+
+/* when and where */
+.whenandwhere{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.whenandwhere__firstday{
+    padding: 5px;
+    flex:0 0 48%;
+    border: 1px solid red;
+}
+
+
+
+.tickets{
+    padding: 7px;
+    flex:0 0 30%;
+    display: flex;
+}
+.tickets__admission{
+    display: flex;
+    flex-direction: column;
+}
+.tickets__days{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.tickets__admit{
+    display: flex;
+    align-items: center;
+
+}
+.tickets__admit p:not(:last-child){
+    margin: 0 16px;
+}
+.tickets__price{
+    text-align: center;
+}
+/* media query */
+
+@media screen and (max-width:768px){
+ .header{
+    width:100%;
+    margin: 0;   
+ }   
+}
